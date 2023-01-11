@@ -34,7 +34,8 @@ div.leftgo{
     width: 200px;
     padding: 12px 8px 10px 12px;
     margin-bottom: 20px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
 }
 
 .leftgo a{
