@@ -1,0 +1,66 @@
+
+.wave{
+    display: flex;
+    filter: drop-shadow(120px 0 0 rgba(211, 237, 252, 0.582));
+}
+.wave div{
+    position: relative;
+    width: 40px;
+    height: 200px;
+    margin: 10px 10px 0 0;
+    overflow: hidden;
+}
+.wave div::before{
+    content: "";
+    width: 300%;
+    height: 100%;
+    background-color:  rgb(211, 237, 252);
+    position: absolute;
+    left: -100%;
+    top: 50%;
+    animation: upDown 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate, wave 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
+    animation-delay: var(--d1), var(--d2);
+}
+
+@keyframes upDown {
+    0%{
+        top: 70%;
+    }
+    100%{
+        top: 30%;
+    }
+}
+@keyframes wave {
+    0%{
+        transform: rotateZ(-20deg);
+    }
+    100%{
+        transform: rotateZ(20deg);
+    }
+}
+
+.wavetop{
+    display: flex;
+    filter: drop-shadow(120px 0 0 rgba(123, 159, 213, 0.503));
+    transform:rotate(-180deg); 
+    margin-bottom: 0;
+}
+.wavetop div{
+    position: relative;
+    width: 40px;
+    height: 200px;
+    margin: 10px 10px 0 10px;
+    overflow: hidden;
+}
+.wavetop div::before{
+    content: "";
+    width: 300%;
+    height: 100%;
+    background-color: rgb(123, 159, 213);
+    position: absolute;
+    left: -100%;
+    top: 50%;
+    animation: upDown 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate, wave 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
+    animation-delay: var(--d1), var(--d2);
+}
+

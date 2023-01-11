@@ -1,0 +1,37 @@
+.item{
+    margin: 15px;
+    position: relative;
+    float:left;
+    width: 120px;
+    height:120px;
+    background-image: url("jujpg/ju2/7.jpg") ;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 10px rgba(255,255,255,.6),0 1px 2px rgb(0,0,0,.1);
+    transition: all 0.4s ease-in-out;
+}
+.item:nth-child(2){
+    background-image: url("jujpg/ju2/5.jpg") ;
+    background-position: 46% 50%;
+    background-size: 100px 110px;
+}
+.item:nth-child(3){
+    background-image: url("jujpg/ju2/6.jpg") ;
+    background-position: 46% 50%;
+    background-size: 100px 115px;
+}
+.item:nth-child(5){
+    background-image: url("jujpg/ju2/8.jpg") ;
+    background-position: 46% 52%;
+    background-size: 120px 120px;
+}
+.item:nth-child(6){
+    background-image: url("jujpg/ju2/9.jpg") ;
+    background-position: 46% 52%;
+    background-size: 100px 120px;
+}
+.item:nth-child(7){
+    background-image: url("jujpg/ju2/10.jpg") ;
+    background-position: 46% 52%;
+    background-size: 120px 120px;
+}

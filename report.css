@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{   
+    overflow: hidden;
+}
+.shell{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 3px;
+}
+.shell div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: 30px;
+    letter-spacing: 2px;
+}
+.image{
+    transform: translateZ(-1px) scale(1.6);
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.9;
+}
+.text{
+    height: 50vh;
+    background-color: #fff;
+}
+.text hl{
+    color: #000;
+}
+.heading{
+    z-index: -1;
+    transform: translateY(-30vh) translateZ(1px);
+    color: #fff;
+    font-size: 30px;
+}

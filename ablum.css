@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{   
+    margin-top: 64px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    background-color: rgb(200, 217, 233);
+    background-image: linear-gradient(rgb(209, 222, 235),rgb(163, 206, 246));
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    float: left;
+    margin:  30px 0 80px 60px;    
+    width: 400px;
+    height: 400px;
+    position: relative;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+@keyframes appear{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.card img{
+    width: 400px;
+    height: 450px;
+}
+.back a{
+    font-size: 40px;
+    font-family: YouYuan;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transform: translateX(400px);
+    transition: all 2s ease;
+}
+.goright p{
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: NSimSun;
+    color: rgb(235, 235, 235);    
+}
+.goright{
+    padding: 0 40px 0 40px;    
+    transform: translateX(-400px);
+    transition: all 2s ease;
+}
+.card:hover .goright{
+    transform: translateX(0);
+}
+.card:hover a{
+    transform: translateX(0);
+}
+.cover,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+    backface-visibility: hidden;
+    display: flex;
+    border-radius: 5%;
+    box-shadow: 0px 0px 15px rgb(44, 65, 86);
+    transition: transform 1.5s ease-in-out;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cover{
+    transform: rotateY(0deg);
+    opacity: 0.75;
+}
+.back{
+    background-color: rgba(42, 42, 42, 0.39);
+    transform: rotateY(180deg);
+    opacity: 0.7;
+}
+.back:hover{
+    opacity: 1;
+}
+.card:hover .cover{
+    transform: rotateY(180deg);
+}
+.card:hover .back{
+    transform: rotateY(0deg);
+}
