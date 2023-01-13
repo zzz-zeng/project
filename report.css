@@ -11,6 +11,7 @@ header{
     height: 100vh;
     overflow-x: hidden;
     perspective: 3px;
+    -webkit-perspective: 3px;
 }
 .shell div{
     position: relative;
@@ -85,7 +86,7 @@ border-radius: 5%;
 
 div.v1 video,div.v1 img{
     width: 50%;
-    height: 40%;
+    height: 50%;
     float: left;
     border-radius: 8%;
     margin: 0 20px 5px 10px;
@@ -104,7 +105,7 @@ div.v3 video,div.v3 img{
 
 div.v2 video,div.v2 img{
     width: 50%;
-    height: 40%;
+    height: 50%;
     float: right;
     border-radius: 8%;
     margin: 0 20px 5px 10px;
