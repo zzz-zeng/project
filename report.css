@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header{   
     overflow: hidden;
 }
@@ -13,10 +14,8 @@ header{
 }
 .shell div{
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
-    font-style: 30px;
     letter-spacing: 2px;
 }
 .image{
@@ -27,15 +26,194 @@ header{
     opacity: 0.9;
 }
 .text{
-    height: 50vh;
-    background-color: #fff;
+    height:48vh;
+    background-color: rgb(238, 238, 238);
+    column-count: 3;
+    column-gap: 30px;
+    padding: 30px 60px 20px 30px;
+    text-align: center;
 }
-.text hl{
-    color: #000;
+.text1{
+    background-color: rgb(238, 238, 238);
+    padding: 30px 30px 20px 30px;
+    text-align: center;
+    height: 115vh;
+    align-items: center;
+    justify-items: center;
+    
 }
+
 .heading{
+    display: flex;
     z-index: -1;
-    transform: translateY(-30vh) translateZ(1px);
+    transform: translateY(-40vh) translateZ(1px);
     color: #fff;
     font-size: 30px;
+}
+a.title{
+    font-size: 3vw;
+    color:rgb(67, 67, 67);
+    font-family: FZYaoti;
+}
+a.title1{
+    font-size: 5vw;
+    color:white;
+    font-family: FZYaoti;
+    text-shadow: 2px 2px 5px rgb(46, 46, 46);
+}
+div.tit{
+    position: absolute;
+    padding: 20px;
+    background-color: rgba(135, 157, 190, 0.729); 
+    border-radius: 10%; 
+    text-align: center;
+    width: 15%;
+    right: 43%;
+    
+}
+a.write{
+    font-size: 1.3vw;
+    font-family: NSimSun;
+}
+.text img{
+border-radius: 5%;
+}
+
+.v1,.v2.v3{
+    opacity: 0.8;
+}
+
+div.v1 video,div.v1 img{
+    width: 50%;
+    height: 40%;
+    float: left;
+    border-radius: 8%;
+    margin: 0 20px 5px 10px;
+    border: 2px solid rgb(220, 227, 240);
+    box-shadow: 0 0 5px rgb(49, 59, 73);
+}
+div.v3 video,div.v3 img{
+    width: 65%;
+    height: 55%;
+    float: left;
+    border-radius: 8%;
+    margin: 0 20px 5px 10px;
+    border: 2px solid rgb(220, 227, 240);
+    box-shadow: 0 0 5px rgb(49, 59, 73);
+}
+
+div.v2 video,div.v2 img{
+    width: 50%;
+    height: 40%;
+    float: right;
+    border-radius: 8%;
+    margin: 0 20px 5px 10px;
+    border: 2px solid rgb(220, 227, 240);
+    box-shadow: 0 0 5px rgb(49, 59, 73);
+}
+.v1:hover,.v2:hover,.v3:hover{
+    opacity: 1;
+}
+div.xiao{
+    float: left;
+    width: 30%;
+    height: 31vh;
+    padding: 10px 5px 10px 5px;
+    margin: 10px 20px 10px 20px;
+    border-style:dotted;
+    border: 2px solid rgba(123, 152, 203, 0.507);
+    border-radius: 5%;
+    overflow: hidden;
+}
+div.small{
+    float: left;
+    width: 43%;
+    height: 30vh;
+    padding: 10px 5px 10px 5px;
+    margin: 20px 3% 10px 3%;
+    border-style:dotted;
+    border: 2px solid rgba(123, 152, 203, 0.507);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.box{
+    float: left;
+    position: absolute;
+    margin:30px 30px 80px 10px;    
+    width: 28%;
+    height: 50vh;    
+    border-radius: 5%;
+    box-shadow: 0px 0px 15px rgb(44, 65, 86);
+    overflow: hidden;
+    background-color: rgb(48, 62, 81, 0.39);
+    opacity: 0.8;
+}
+.card{
+    text-align: center;
+    position: absolute;
+    transition: transform 1.5s ease-in-out;
+    padding: 30% 10% 30% 10%;
+    width: 100%;
+    height: 100%;
+    
+}
+.card h1{
+    font-family:FZYaoti;
+    font-size: 3vw;
+    color: rgb(225, 225, 225);
+}
+.box:hover .card{
+    background-color:rgb(48, 62, 81, 0.45);
+    filter: blur(3px);
+}
+.box:hover .card h1{
+    color: rgb(171, 171, 171);
+}
+.go{
+    position: absolute;
+    padding: 0 30px 0 30px;
+    width: 100%;
+    height: 100%;   
+    top: -90%;
+
+}
+.go p.one{
+    font-size: 1.2vw;
+    font-family: NSimSun;
+    color: rgb(235, 235, 235);    
+    transform: translateX(-400px);
+    transition: all 1s ease;    
+}
+.go p.two{
+    font-size: 1.2vw;
+    font-family: NSimSun;
+    color: rgb(255, 255, 255);
+    transform: translateX(400px);
+    transition: all 1s ease;
+}
+.go:hover p{
+    transform: translateX(0);
+}
+
+.text2{
+    height: 70vh;
+    background-color: rgb(251, 251, 251);
+    padding: 10% 0 0 0;
+    box-shadow: -5px 0 10px rgb(251, 251, 251);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+div.fen{
+    background-image: url('./6.jpg');
+    background-attachment:fixed;
+    height: 150vh;
+    background-size: cover;
+}
+div.fenn{
+    z-index: 10;
+    height: 150vh;
+    background-image: linear-gradient(rgb(251, 251, 251),transparent);
+    padding: 40px 10% 30px 10%;
 }
